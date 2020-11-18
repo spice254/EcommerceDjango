@@ -109,7 +109,7 @@ Don't be shy come and see for yourself{% endblock %}
                             <i class="fab fa-cc-mastercard"></i>
                             <h2>Secure Payment</h2>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur elit
+                                send money via M-pesa
                             </p>
                         </div>
                     </div>
@@ -118,16 +118,16 @@ Don't be shy come and see for yourself{% endblock %}
                             <i class="fa fa-truck"></i>
                             <h2>Worldwide Delivery</h2>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur elit
+                                Through our online platform Travel O
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 feature-col">
                         <div class="feature-content">
                             <i class="fa fa-sync-alt"></i>
-                            <h2>90 Days Return</h2>
+                            <h2>30 Days Return</h2>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur elit
+                                read on our 30 day return policy
                             </p>
                         </div>
                     </div>
@@ -136,7 +136,8 @@ Don't be shy come and see for yourself{% endblock %}
                             <i class="fa fa-comments"></i>
                             <h2>24/7 Support</h2>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur elit
+                                Our online pressence is always on, despite any forms of network or power issues,
+                                our engineers ensure that the quality of service is fulfilling to u our loyal and lovely client
                             </p>
                         </div>
                     </div>
@@ -152,7 +153,7 @@ Don't be shy come and see for yourself{% endblock %}
                     <div class="col-md-3">
                         <div class="category-item ch-400">
                             <img src="{% static 'website/img/category-3.jpg' %}" />
-                            <a class="category-name" href="">
+                            <a class="category-name" href="{% url 'product-list' %}">
                                 <p>Some text goes here that describes the image</p>
                             </a>
                         </div>
@@ -160,13 +161,13 @@ Don't be shy come and see for yourself{% endblock %}
                     <div class="col-md-3">
                         <div class="category-item ch-250">
                             <img src="{% static 'website/img/category-4.jpg' %}" />
-                            <a class="category-name" href="">
+                            <a class="category-name" href="{% url product-list %}">
                                 <p>Some text goes here that describes the image</p>
                             </a>
                         </div>
                         <div class="category-item ch-150">
                             <img src="{% static 'website/img/category-5.jpg' %}" />
-                            <a class="category-name" href="">
+                            <a class="category-name" href="{% url 'product-list' %}">
                                 <p>Some text goes here that describes the image</p>
                             </a>
                         </div>
@@ -174,13 +175,13 @@ Don't be shy come and see for yourself{% endblock %}
                     <div class="col-md-3">
                         <div class="category-item ch-150">
                             <img src="{% static 'website/img/category-6.jpg' %}" />
-                            <a class="category-name" href="">
+                            <a class="category-name" href="{% url 'product-list' %}">
                                 <p>Some text goes here that describes the image</p>
                             </a>
                         </div>
                         <div class="category-item ch-250">
                             <img src="{% static 'website/img/category-7.jpg' %}" />
-                            <a class="category-name" href="">
+                            <a class="category-name" href="{% url 'product-list' %}">
                                 <p>Some text goes here that describes the image</p>
                             </a>
                         </div>
@@ -188,7 +189,7 @@ Don't be shy come and see for yourself{% endblock %}
                     <div class="col-md-3">
                         <div class="category-item ch-400">
                             <img src="{% static 'website/img/category-8.jpg' %}" />
-                            <a class="category-name" href="">
+                            <a class="category-name" href="{% url 'product-list' %}">
                                 <p>Some text goes here that describes the image</p>
                             </a>
                         </div>
@@ -223,7 +224,7 @@ Don't be shy come and see for yourself{% endblock %}
                     <div class="col-lg-3">
                         <div class="product-item">
                             <div class="product-title">
-                                <a href="#">Product Name</a>
+                                <a href="{% url 'product-detail' %}">Product Name</a>
                                 <div class="ratting">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -244,14 +245,14 @@ Don't be shy come and see for yourself{% endblock %}
                             </div>
                             <div class="product-price">
                                 <h3><span>$</span>99</h3>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                <a class="btn" href="{% url 'cart' %}"><i class="fa fa-shopping-cart"></i>Buy Now</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="product-item">
                             <div class="product-title">
-                                <a href="#">Product Name</a>
+                                <a href="{% url 'product-detail' %}">Product Name</a>
                                 <div class="ratting">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -261,7 +262,7 @@ Don't be shy come and see for yourself{% endblock %}
                                 </div>
                             </div>
                             <div class="product-image">
-                                <a href="product-detail.html">
+                                <a href="{% url 'product-detail' %}">
                                     <img src="{% static 'website/img/product-2.jpg' %}" alt="Product Image">
                                 </a>
                                 <div class="product-action">
